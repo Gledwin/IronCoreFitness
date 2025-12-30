@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* IronCore Fitness Brand Palette Integration */
+:root {
+  /* Default (Light) Mode - Not specified in brand guide, retaining a light default for accessibility */
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Base colors for Dark/Industrial theme */
+:root {
+  --ic-charcoal-grey: #1F1F1F; /* Charcoal Grey */
+  --ic-forged-charcoal: #2B2B2B; /* Forged Charcoal */
+  --ic-warm-soft-yellow: #F5E6B3; /* Warm Soft Yellow (Accent) */
+  --ic-warm-beige: #CFC4A7; /* Warm Beige (Subtle Text/Details) */
+  --ic-medium-grey: #8C8C8C; /* Medium Grey (Muted Text) */
+  --ic-industrial-white: #E6E6E6; /* Industrial White (Primary Text) */
+}
+
+/* Applying IronCore dark mode to the body */
+body {
+  /* Use Charcoal Grey as the primary dark background for the main container */
+  background: var(--ic-charcoal-grey); 
+  /* Use Industrial White for the primary foreground text */
+  color: var(--ic-industrial-white); 
+  /* Fonts will be handled by Tailwind classes in the components */
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
