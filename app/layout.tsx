@@ -16,16 +16,14 @@ function GlobalSpinner() {
                 </div>
                 <div className="mt-8 text-center">
                     <h2 className="text-[#F5E6B3] font-oswald font-bold uppercase tracking-[0.6em] text-sm mb-2">
-                        IronCore Protocol
+                        IronCore Fitness
                     </h2>
                     <div className="flex justify-center gap-1">
                         <span className="w-1 h-1 bg-[#F5E6B3] animate-bounce [animation-delay:-0.3s]"></span>
                         <span className="w-1 h-1 bg-[#F5E6B3] animate-bounce [animation-delay:-0.15s]"></span>
                         <span className="w-1 h-1 bg-[#F5E6B3] animate-bounce"></span>
                     </div>
-                    <p className="mt-4 text-gray-600 font-oswald uppercase tracking-widest text-[9px] max-w-[200px] leading-relaxed">
-                        Initializing laboratory assets and biometric synchronization...
-                    </p>
+                
                 </div>
             </div>
         </div>
@@ -77,4 +75,4 @@ export default function RootLayout({
             </Suspense>
         </html>
     );
-}
+} 
